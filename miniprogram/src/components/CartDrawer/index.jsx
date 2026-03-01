@@ -40,7 +40,7 @@ export default function CartDrawer({
               <Text className='cart-drawer__empty-hint'>快去挑选美味菜品吧~</Text>
             </View>
           ) : (
-            <View className='cart-drawer__list'>
+            <View className='cart-drawer__content'>
               {cart.map(item => (
                 <View key={item.id} className='cart-drawer__item'>
                   <View className='cart-drawer__item-left'>
@@ -82,26 +82,24 @@ export default function CartDrawer({
                   />
                 </View>
               </View>
+
+              <View className='cart-drawer__checkout'>
+                <View className='cart-drawer__total-row'>
+                  <Text className='cart-drawer__total-label'>合计</Text>
+                  <Text className='cart-drawer__total-price'>¥{totalPrice}</Text>
+                </View>
+                <View
+                  className={`cart-drawer__submit ${submitting ? 'cart-drawer__submit--disabled' : ''}`}
+                  onClick={submitting ? undefined : onSubmit}
+                >
+                  <Text className='cart-drawer__submit-text'>
+                    {submitting ? '提交中...' : '确认下单'}
+                  </Text>
+                </View>
+              </View>
             </View>
           )}
         </View>
-
-        {cart.length > 0 && (
-          <View className='cart-drawer__footer'>
-            <View className='cart-drawer__total-row'>
-              <Text className='cart-drawer__total-label'>合计</Text>
-              <Text className='cart-drawer__total-price'>¥{totalPrice}</Text>
-            </View>
-            <View
-              className={`cart-drawer__submit ${submitting ? 'cart-drawer__submit--disabled' : ''}`}
-              onClick={submitting ? undefined : onSubmit}
-            >
-              <Text className='cart-drawer__submit-text'>
-                {submitting ? '提交中...' : '确认下单'}
-              </Text>
-            </View>
-          </View>
-        )}
       </View>
     </View>
   )
