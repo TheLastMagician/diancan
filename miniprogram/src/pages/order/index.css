@@ -1,0 +1,146 @@
+.order-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.order-page__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 28px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.order-page__back {
+  font-size: 36px;
+  color: #333;
+}
+
+.order-page__header-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.order-page__loading {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px;
+}
+
+.order-page__loading-text {
+  font-size: 28px;
+  color: #999;
+}
+
+.order-page__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.order-page__empty-icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+}
+
+.order-page__empty-text {
+  font-size: 28px;
+  color: #999;
+}
+
+.order-page__empty-hint {
+  font-size: 24px;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.order-page__list {
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.order-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.order-card__id {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.order-card__status {
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.order-card__status-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.order-card__items {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.order-card__item-icon-wrap {
+  width: 72px;
+  height: 72px;
+  background: #fff8f0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-card__item-icon {
+  font-size: 36px;
+}
+
+.order-card__item-more {
+  width: 72px;
+  height: 72px;
+  background: #f0f0f0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-card__item-more-text {
+  font-size: 22px;
+  color: #999;
+}
+
+.order-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-card__time {
+  font-size: 22px;
+  color: #999;
+}
+
+.order-card__total {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
