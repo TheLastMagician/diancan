@@ -1,2 +1,5 @@
 node_modules/
 dist/
+miniprogram/.swc/
+miniprogram/dist/
+miniprogram/node_modules/

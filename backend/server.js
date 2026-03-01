@@ -32,11 +32,21 @@ const orders = [];
 let orderIdCounter = 1000;
 
 app.get('/api/menu', (req, res) => {
-  const { category } = req.query;
+  const { category, search } = req.query;
+  let result = menuItems;
   if (category && category !== '全部') {
-    return res.json(menuItems.filter(item => item.category === category));
+    result = result.filter(item => item.category === category);
   }
-  res.json(menuItems);
+  if (search) {
+    result = result.filter(item => item.name.includes(search) || item.description.includes(search));
+  }
+  res.json(result);
+});
+
+app.get('/api/menu/:id', (req, res) => {
+  const item = menuItems.find(m => m.id === parseInt(req.params.id));
+  if (!item) return res.status(404).json({ error: '菜品不存在' });
+  res.json(item);
 });
 
 app.get('/api/categories', (req, res) => {

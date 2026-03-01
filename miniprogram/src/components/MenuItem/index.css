@@ -1,0 +1,127 @@
+.menu-item {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.menu-item__icon {
+  width: 120px;
+  height: 120px;
+  background: #fff8f0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.menu-item__emoji {
+  font-size: 56px;
+}
+
+.menu-item__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item__name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.menu-item__desc {
+  font-size: 22px;
+  color: #999;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-item__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.menu-item__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.menu-item__currency {
+  font-size: 22px;
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.menu-item__price {
+  font-size: 34px;
+  color: #ff6b35;
+  font-weight: 700;
+}
+
+.menu-item__sales {
+  font-size: 20px;
+  color: #ccc;
+  margin-left: 8px;
+}
+
+.menu-item__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item__qty-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.menu-item__btn--minus {
+  border: 2px solid #ff6b35;
+  color: #ff6b35;
+  background: #fff;
+}
+
+.menu-item__btn--plus {
+  background: #ff6b35;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.menu-item__qty {
+  width: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}

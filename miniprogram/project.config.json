@@ -1,0 +1,18 @@
+{
+  "miniprogramRoot": "dist/weapp/",
+  "projectname": "food-ordering-miniprogram",
+  "description": "美味餐厅 - 在线点餐微信小程序",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true,
+    "autoAudits": false
+  },
+  "compileType": "miniprogram",
+  "condition": {}
+}
